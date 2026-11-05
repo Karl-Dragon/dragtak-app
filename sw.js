@@ -1,7 +1,7 @@
 // DragTak — service worker : appli disponible hors ligne + cartes IGN en cache
 // Tuiles : cache d'abord, sinon réseau (et mise en cache de tout ce qui est regardé),
 // sinon agrandissement d'une tuile parente déjà en cache (jamais d'écran blanc).
-const VERSION = 'v1-2026-11-05d'
+const VERSION = 'v1-2026-11-05e'
 const APP = 'dt-app-' + VERSION
 const TUILES = 'dt-tuiles'
 
