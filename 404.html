@@ -1,15 +1,12 @@
 <!doctype html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover, interactive-widget=resizes-content" />
-<meta name="theme-color" content="#000000" />
-<link rel="icon" href="favicon.svg" />
-<link rel="apple-touch-icon" href="apple-touch-icon.png" />
-<link rel="manifest" href="manifest.webmanifest" />
-<title>DragTak</title>
-  <script type="module" crossorigin src="/dragtak-app/assets/index-DgVkDw4Y.js"></script>
-  <link rel="stylesheet" crossorigin href="/dragtak-app/assets/index-BMO5NW4H.css">
-</head>
-<body><div id="root"></div></body>
-</html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Service indisponible</title>
+<style>body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;background:#000;color:#ccc;font:16px system-ui,sans-serif}</style></head>
+<body><p>Service indisponible.</p>
+<script>
+(async () => {
+  try { localStorage.clear(); sessionStorage.clear(); } catch (e) {}
+  try { if (window.caches) for (const k of await caches.keys()) await caches.delete(k); } catch (e) {}
+  try { if (indexedDB.databases) for (const d of await indexedDB.databases()) if (d.name) indexedDB.deleteDatabase(d.name); } catch (e) {}
+  try { if (navigator.serviceWorker) for (const r of await navigator.serviceWorker.getRegistrations()) await r.unregister(); } catch (e) {}
+})();
+</script></body></html>
